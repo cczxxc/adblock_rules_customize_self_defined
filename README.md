@@ -1,0 +1,2 @@
+# adblock_rules_customize_self_defined
+adblock_rules_customize_self_defined----for_vivaldi
