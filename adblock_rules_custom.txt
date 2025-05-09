@@ -1,0 +1,431 @@
+!首先屏蔽所有的头像，呵呵前三个通用规则适用绝大多数网站，不用avatar名称的就单独加。。以前还单个网站搞，傻！
+!但是有个别网站不停地重载导致cpu高,对着日志看都是noavatar不停被屏蔽，于是加上例外规则@@，改了下居然成功
+
+@@noimage
+@@noavatar
+!@@default_avatar.jpg
+!虎牙的是default_avatar, 但还是会被下面avata*.jpg屏蔽。。
+!avatar*.jpg
+!avatar*.png
+!avatar*.gif
+
+!https://passport.baidu.com
+
+http://tb.himg.baidu.com/sys/portrait/item
+http://www.yaliang.net/swt/swt_qy.gif
+tieba.baidu.com##.j_user_sign
+tieba.baidu.com##.ui_card_wrap
+|http://i1.tietuku.com/745c30472b31907a.gif
+||b.ikafan.com/5/*
+||cdn.pcbeta.attachment.inimc.com/data/attachment/album/*
+||huaban.com/js/pinmarklet.js
+||i.imgur.com^
+||i.pcbeta.com/data/attachment/album/*
+{||images.newsmth.net/nForum/uploadFace/*}
+||wumii.com^$third-party
+tieba.baidu.com###j_p_postlist.p_postlist > .l_post.l_post_bright.noborder > .d_post_content_main.d_post_content_firstfloor > .thread_recommend_ps
+iask.sina.com.cn##.hot_img.oh
+iask.sina.com.cn###todayFix.zt_box.oh
+www.bioon.com###D1pic1.fPic
+
+baike.baidu.com###side.col-sub
+tieba.baidu.com###head.search_bright.clearfix > .search_main_wrap > .search_main.clearfix > .suggestion > .suggestion_list
+www.sogou.com###vl.suggestion.nobg > .suginner
+www.sogou.com###right.right
+baike.sogou.com###divc.smartbox
+baike.sogou.com###side_bar.side_bar
+baike.sogou.com###side_bar.side_bar > .side_column_wrap
+iask.sina.com.cn###daily_cnxh > .bottom_box_zt
+iask.sina.com.cn###topic_ylzz > .rb_list_wrap.rb_list_wrap_no > .clearfix.rb_list
+iask.sina.com.cn###daily_topic_flnr
+bbs.gfan.com###postmessage_236317604.t_f > a[href="http://www.875.cc "] > font > font
+bbs.gfan.com###postmessage_236317604.t_f > a[href="http://www.875.cc "] > div
+
+||img5.cache.netease.com/cnews/2012/12/28/201212281627381dfea.jpg
+www.baidu.com###\34 001
+www.baidu.com###content_left > ._BwEjV
+news.qq.com###end > .endMain
+benyouhui.it168.com###eng_asw_50495392881765370
+ent.qq.com###listCon
+muchong.com##.login.xmc_fl
+muchong.com###xd_popbox
+muchong.com###xd_popbox
+tech.qq.com##.endMain
+||img1.gtimg.com/finance/pics/hv1/128/31/1934/125766383.jpg$image
+
+blog.163.com###r_mlofteriframe
+
+blog.163.com###r_m163news
+
+blog.163.com###r_mlofteriframe2
+
+blog.163.com##.h.fc01.i9.i
+blog.163.com##.h.fc01.i2.i
+||img12.yiihuu.com/upimg/manage/2017/11/21/50-1511261440-209876.jpg?auto=cut$image
+zhidao.baidu.com##.mod-shadow.wgt-daily
+||10.72.25.13:9000/summercamppcpop/index.html?id=433$subdocument
+finance.ifeng.com###js_videoCountBox
+finance.ifeng.com##.clearfix.pics_2 > li:nth-of-type(1)
+finance.ifeng.com##.clearfix.pics_2
+aike.baidu.com##.lemmaWgt-promotion-vbaike
+ww.sohu.com##.hot-atlas.bord.clearfix
+www.sohu.com###hot-news
+http://guba.eastmoney.com/
+www.baidu.com###content_right
+www.55188.com###tutorial_tip
+||zt.55188.com/201801/images/close-gg.png$image
+jiaxing.19lou.com##.login-box
+
+! 2018/6/14 下午6:10:18 https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&rsv_idx=1&tn=baidu&wd=%E4%B8%9C%E6%96%B9%E8%B4%A2%E5%AF%8C&oq=%25E7%25BE%258E%25E8%2582%25A1%25E5%25AE%259E%25E6%2597%25B6%25E8%25A1%258C%25E6%2583%2585%25E8%25BD%25AF%25E4%25BB%25B6&rsv_pq=d3576f9f00011806&rsv_t=0b8dJTQ%2BTq7U2fxIf1qCGbTGGlJFt7gXdz8cUrIMua52DG2YNPB3jYP%2FQqM&rqlang=cn&rsv_enter=1&rsv_sug3=4&rsv_sug1=3&rsv_sug7=100&rsv_sug2=0&inputT=5527&rsv_sug4=5528
+www.baidu.com##body > .xpath-log.result-op
+
+! 2018/6/14 下午9:14:34 http://finance.sina.com.cn/stock/usstock/c/2018-06-14/doc-ihcwpcmr0626057.shtml
+||finance.sina.com.cn/iframe/txcj.shtml$subdocument
+
+! 2018/6/14 下午9:14:47 http://finance.sina.com.cn/stock/usstock/c/2018-06-14/doc-ihcwpcmr0626057.shtml
+||finance.sina.com.cn/iframe/videolist.shtml$subdocument
+
+! 2018/6/15 上午9:36:55 http://new.qq.com/omn/20180615/20180615A07TO600
+new.qq.com##.right-bar
+
+! 2018/6/16 上午11:32:37 http://www.brtn.cn/news/m_999c56357e8849cb7
+www.brtn.cn##.phenix-title-list-2.phenix-panel
+
+! 2018/6/16 上午11:32:46 http://www.brtn.cn/news/m_999c56357e8849cb7
+www.brtn.cn##.phenix-focus-even-images.phenix-panel
+
+! 2018/6/16 上午11:32:54 http://www.brtn.cn/news/m_999c56357e8849cb7
+www.brtn.cn##.phenix-lp-rt-1.phenix-panel
+
+! 2018/6/17 上午10:19:39 https://tieba.baidu.com/p/2220490202?red_tag=0884772789
+||gss0.bdstatic.com/6LZ1dD3d1sgCo2Kml5_Y_D3/sys/portrait/item/*$image
+
+! 2018/6/17 上午10:20:00 https://tieba.baidu.com/p/2220490202?red_tag=0884772789
+tieba.baidu.com##.topic_list_box
+
+! 2018/6/18 下午1:17:53 https://www.sohu.com/a/117393070_469757
+www.sohu.com##.hot-atlas.bord.clearfix
+
+! 2018/6/19 上午11:10:21 http://www.yuncaijing.com/insider/main.html
+||aliyun.yuncaijing.com/upload/2018-05-11/5af575151ae04.jpg$image
+
+! 2018/6/19 下午12:45:00 http://news.ifeng.com/a/20180619/58788483_0.shtml
+news.ifeng.com###js_videoCountBox
+
+! 2018/6/19 下午12:45:18 http://news.ifeng.com/a/20180619/58788483_0.shtml
+news.ifeng.com##.right
+
+! 2018/6/19 下午12:46:02 http://news.ifeng.com/a/20180619/58788483_0.shtml
+news.ifeng.com##.ss_none.blockL
+
+! 2018/6/19 下午12:46:16 http://news.ifeng.com/a/20180619/58788483_0.shtml
+news.ifeng.com##.left > .ss_none.adbox02
+
+! 2018/6/19 下午3:42:35 http://www.55188.com/thread-8416888-1-1.html
+@@||*.55188.com/customavatars/2552789.jpg$image
+
+! 2018/7/8 下午9:47:56 http://bbs.tianya.cn/post-feeling-4113928-1.shtml
+bbs.tianya.cn##.scroll-btn
+
+! 2018/7/30 上午9:27:29 http://blog.sina.com.cn/s/blog_86bcbe4e0101kepj.html
+blog.sina.com.cn###module_903 > .SG_connBody > .relaList.atcTitList
+
+! 2018/7/30 上午9:27:42 http://blog.sina.com.cn/s/blog_86bcbe4e0101kepj.html
+blog.sina.com.cn###module_904 > .SG_connBody > .relaList.atcTitList
+
+! 2018/7/31 下午2:43:43 http://finance.ifeng.com/stock/gmxx/20110408/3837110.shtml
+finance.ifeng.com##div.blockR:nth-of-type(12)
+
+! 2018/9/3 上午8:45:23 https://www.jiemian.com/article/2428217.html
+www.jiemian.com##.jm-app
+
+! 2018/9/13 下午1:46:15 http://bbs.zol.com.cn/sjbbs/d98_295111_0.html
+bbs.zol.com.cn##.fixed-login-inner
+
+! 2018/11/4 下午6:03:54 https://zhidao.baidu.com/question/475305902.html
+zhidao.baidu.com##.wgt-push
+
+! 2018/11/4 下午6:04:00 https://zhidao.baidu.com/question/475305902.html
+zhidao.baidu.com##.mod-noshadow.cms-slide-lazy.cms-slide
+
+! 2019/2/15 下午4:55:34 https://wenku.baidu.com/view/d5e03d8e84868762caaed5a5
+wenku.baidu.com##.reader-tools-bar
+
+! 2019/2/15 下午4:55:41 https://wenku.baidu.com/view/d5e03d8e84868762caaed5a5
+wenku.baidu.com##.tools-bar-smaller.tools-bar-small.reader-tools-bar-wrap
+
+! 2020-09-10 https://www.55188.com
+www.55188.com##section.c-ad-wrap.c-wrap:nth-of-type(2)
+
+! 2020-09-20 https://www.cnblogs.com
+||images.cnblogs.com/cnblogs_com/vipyoumay/1221265/o_%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20180522165644.png$image
+www.cnblogs.com###page_begin_html > div:nth-of-type(1) > p:nth-of-type(2)
+www.cnblogs.com##div:nth-of-type(1) > p:nth-of-type(3)
+
+! 2020-09-21 https://bbs.csdn.net
+||passport.csdn.net/account/login?from=https://bbs.csdn.net/topics/330155714?page=2&utm_source=auto_pv10$subdocument
+
+! 2020-09-26 https://blog.csdn.net
+blog.csdn.net##.login-mark
+||passport.csdn.net/account/login$subdocument
+
+! 2020-10-06 https://www.huya.com
+www.huya.com###player-gift-wrap
+
+! 2020-11-24 http://tianqi.2345.com
+tianqi.2345.com##.list-ads
+
+! 2020-12-26 https://www.huya.com
+www.huya.com###player-login-tip
+
+! 2021-02-05 https://v.youku.com
+v.youku.com##.information-tip-des
+v.youku.com##.animate-in.information-tips-box
+
+! 2021-02-08 https://y.qq.com
+y.qq.com##.popup_guide
+
+! 2021-02-14 https://www.douban.com
+www.douban.com###landing-bar > .bd
+www.douban.com###landing-bar
+
+! 2021-03-16 https://baike.baidu.com
+baike.baidu.com###sl-player-el-video
+baike.baidu.com##.lark-custom-controls-hide.lark-status-playing.lark-status-has-start.larkplayer
+
+! 2021-04-08 https://blog.csdn.net
+blog.csdn.net###passportbox > span
+
+! 2021-04-12 https://stackoverflow.com
+stackoverflow.com##.js-consent-banner.r16.l16.b16.bar-lg.fc-white.bg-black-750.p32.sm\:w-auto.ws4.z-nav-fixed.ps-fixed.ff-sans
+
+! 2021-04-22 https://tieba.baidu.com
+tieba.baidu.com##.tang-pass-login.tang-pass-qrcode.clearfix
+tieba.baidu.com##.tang-pass-footerBar
+tieba.baidu.com##.tieba-login-background
+
+! 2021-06-21 https://baike.baidu.com
+baike.baidu.com##.J-secondsknow-large-container.secondsknow-large-container
+
+! 2021-07-02 https://www.bilibili.com
+www.bilibili.com##.unlogin-popover-avatar.unlogin-popover
+www.bilibili.com##.login-tip
+
+! 2021-07-21 https://blog.csdn.net
+blog.csdn.net##.leftPop
+
+! 2021-07-28 https://www.sohu.com
+www.sohu.com##.clear.article-allsee
+www.sohu.com##.right-fixed > .bord.clear.hot-article
+www.sohu.com###right-side-bar
+www.sohu.com##.news-wrapper
+
+! 2021-08-18 https://www.taoguba.com.cn
+www.taoguba.com.cn###joinTGB
+
+! 2021-08-19 https://www.163.com
+www.163.com##.js-tab-mod.post_recommends
+www.163.com##.post_side
+
+! 2021-08-19 https://bbs.pcbeta.com
+||bbs.pcbeta.com/data/avatar/001/57/26/05_avatar_middle.jpg$image
+https://cpro.baidustatic.com/cpro/ui/cm.js
+
+! 2021-08-20 https://zhuanlan.zhihu.com
+zhuanlan.zhihu.com##.is-fixed.ColumnPageHeader.Sticky
+
+! 2021-08-21 https://bbs.pcbeta.com
+||bbs.pcbeta.com/data/attachment/common/group_icon/*/*.png$image
+
+! 2021-08-22 https://bbs.pcbeta.com
+||bbs.pcbeta.com///static/image/pcbeta/star_level*.gif$image
+
+! 2021-10-31 https://tv.cctv.com
+tv.cctv.com##.video_btnBar
+
+! 2022-01-23 https://www.w3cschool.cn
+
+www.w3cschool.cn##.widget-main
+
+! 2022-01-25 https://dayjs.fenxianglu.cn
+dayjs.fenxianglu.cn##.zh-feature
+
+! 2022-01-28 https://www.cnbeta.com
+||www.cnbeta.com/images/cb_v5_sprite.png$image
+
+! 2022-02-03 https://www.jianshu.com
+www.jianshu.com##section._3Z3nHf:nth-of-type(1)
+
+! 2022-02-05 https://www.jianshu.com
+www.jianshu.com##header
+
+! 2022-02-05 https://juejin.cn
+juejin.cn##.recommend-box
+
+! 2022-02-07 https://www.infoq.cn
+www.infoq.cn##.widget-slide-weekly
+
+! 2022-05-27 https://www.cnblogs.com
+www.cnblogs.com###live2d
+
+! 2022-06-02 https://zhuanlan.zhihu.com
+zhuanlan.zhihu.com##.css-1izy64v
+
+! 2022-06-07 https://www.anyviewer.cn
+www.anyviewer.cn##.js-toc
+
+! 2022-08-18 https://3g.163.com
+3g.163.com##.js-open-app.backflow-floating
+
+! 2022-10-16 https://www.abackup.com
+www.abackup.com##.js-toc-box
+
+! 2022-12-25 https://www.zhihu.com
+www.zhihu.com##.css-1x8hcdw.is-fixed.is-hidden.AppHeader.Sticky
+
+! 2023-05-17 https://www.bilibili.com
+www.bilibili.com##.bilibili-player-video-message
+www.bilibili.com##.part-undefined.pop-live-small-mode
+www.bilibili.com##.ad-floor-exp.ad-report
+
+! 2023-07-21 https://www.toutiao.com
+www.toutiao.com##.message-container
+
+! 2023-07-30 https://www.qq.com
+www.qq.com##.m-match.mod
+
+! 2023-08-02 https://blog.csdn.net
+blog.csdn.net##.false.passport-login-tip-container
+
+! 2023-08-21 https://blog.csdn.net
+blog.csdn.net##.side-chatdoc-desc-box
+
+! 2023-08-21 https://www.bilibili.com
+www.bilibili.com##.bili-mini-mask
+
+! 2023-09-08 https://club.qingdaonews.com
+club.qingdaonews.com##.m-box-3
+
+! 2023-09-16 https://blog.csdn.net
+blog.csdn.net##.left-toolbox
+
+! 2023-10-22 https://blog.csdn.net
+||csdnimg.cn/release/blogv2/dist/pc/img/btnGuideSide1.gif$image
+
+! 2024-02-29 https://search.bilibili.com
+search.bilibili.com##.login-tip
+
+! 2024-04-14 https://blog.csdn.net
+blog.csdn.net##.dark.passport-login-tip-container
+
+
+! 2024-04-19 https://www.zhihu.com
+www.zhihu.com##.KfeCollection-VipRecommendCard
+www.zhihu.com##.css-q849gq.Button--blue.Button--primary.Button
+www.zhihu.com##.HotQuestions.Card
+
+! 2024-04-19 https://zhidao.baidu.com
+zhidao.baidu.com##.feed-recommend-list
+
+! 2024-04-19 https://zhuanlan.zhihu.com
+zhuanlan.zhihu.com##.css-ip03jh.is-higher.OpenInAppButton
+zhuanlan.zhihu.com##.Post-VipRecommendCard.KfeCollection-VipRecommendCard-article.KfeCollection-VipRecommendCard
+zhuanlan.zhihu.com##.ContentItem-actions
+zhuanlan.zhihu.com##.css-twoe8j
+
+! 2024-04-19 https://blog.csdn.net
+blog.csdn.net##.passport-login-box
+blog.csdn.net##.feed-Sign-weixin
+
+! 2024-04-19 https://download.csdn.net
+||passport.csdn.net/waplogin$subdocument
+
+! 2024-04-19 https://m.163.com
+m.163.com##.js-open-app.backflow-floating
+
+! 2024-04-19 https://zhuanlan.zhihu.com
+zhuanlan.zhihu.com##.is-fixed.MobileAppHeader.Sticky
+
+! 2024-04-20 https://www.ithome.com
+www.ithome.com##.loaded.has-title.modal
+
+! 2024-04-20 https://www.youku.com
+www.youku.com##.promotelogin_infobottom
+
+! 2024-05-11 https://www.bilibili.com
+www.bilibili.com##.part-1.pop-live-small-mode
+
+! 2024-05-15 https://www.jianshu.com
+www.jianshu.com##section.ouvJEz:nth-of-type(2)
+
+! 2024年6月6日 https://www.google.com
+www.google.com##.VEELad.nD2EKb
+
+! 2024年6月22日 https://down.gamersky.com
+down.gamersky.com###ImgTxtXXYL > li
+
+! 2024年6月23日 https://v.youku.com
+v.youku.com##div.kui-message-information-item:nth-of-type(1)
+
+! 2024年6月26日 https://new.qq.com
+new.qq.com##.qqcom-jxvideo
+
+! 2024年7月10日 https://www.sohu.com
+www.sohu.com##.article-allsee
+
+! 2024-04-20 https://zhidao.baidu.com
+zhidao.baidu.com##.recommend-answer-link
+zhidao.baidu.com##.ec-ad.wgt-recommend-answer-container
+
+! 2024-05-04 https://m.douban.com
+m.douban.com##.talion-nav-footer
+
+! 2024-05-05 https://baijiahao.baidu.com
+baijiahao.baidu.com##._3ZGdi9gVdeT0r4iXThSZyR._2a6i5UuooMxf9NjjWZLRkN._3sEOJqvavn7Lovn0IYEHVr.uukjsi6a_zpZccrqYiI3k
+
+! 2024-05-05 https://post.m.smzdm.com
+post.m.smzdm.com##.fixed-logo
+
+! 2024-05-29 https://www.msn.cn
+www.msn.cn##.consumption-river
+
+! 2024-06-09 https://m.sohu.com
+m.sohu.com##.art-rec-news
+
+! 2024-06-15 https://baijiahao.baidu.com
+baijiahao.baidu.com##._2a6i5UuooMxf9NjjWZLRkN._3sEOJqvavn7Lovn0IYEHVr.uukjsi6a_zpZccrqYiI3k
+
+! 2024-06-18 https://view.inews.qq.com
+view.inews.qq.com##.slider-top-bar_sliderWrapper__1Nize
+view.inews.qq.com##.normal_fixedLaunchButton__ZolBZ.bottom-bar_buttonWrap__NXBe-
+
+! 2024年7月12日 https://zhuanlan.zhihu.com
+zhuanlan.zhihu.com##.css-zr60jh
+
+! 2024年9月19日 https://cj.sina.cn
+cj.sina.cn##.pluse.animated.js-guss-caijing.m-guss-caijing
+
+cn.bing.com###b_context > .b_ans
+cn.bing.com###ev_hook
+cn.bing.com##.vs
+cn.bing.com###b_context
+cn.bing.com##.b_pinnedHeader
+cn.bing.com###b_pole
+cn.bing.com##.sa_as
+cn.bing.com###b_notificationContainer_bop
+!下面这两个bing的会影响手机版edge里bing的自动展开更多结果，故不用。！！！！！！！！！！！！！！！！！
+!cn.bing.com##li.b_ans:nth-of-type(11)
+!cn.bing.com###b_results > li.b_ans
+
+! 2024年10月24日 https://www.163.com
+www.163.com##.pay_recommend_list
+
+! 2024年12月22日 https://duckduckgo.com
+duckduckgo.com##.footer > div
+duckduckgo.com##.homepage-cta-section_ctaSection__o_ioD
+duckduckgo.com##.belowTheFold_howItWorksSection__nbvql > div > div > div.flex
+duckduckgo.com##.howItWorksDetails_root__loece.stack_root__Mp7Le
+duckduckgo.com##.desktop-homepage_belowTheFoldWrapper__ruEBp
+duckduckgo.com##.mobile-homepage_footer__ccWRR
+duckduckgo.com##.mobile-homepage_belowTheFoldWrapper__xi7ci
+duckduckgo.com##.atb-loaded--animated.atb-banner__btn--standalone.btn.js-atb-banner
